@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  /* background-color: aquamarine; */
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+}
+
+.banner img {
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+.principal {
+  /* background-color: antiquewhite; */
+  /* border: 1px solid red; */
+  margin: 0% 5% 0% 5%;
+  padding: 5px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.principal__titulo {
+  /* border: solid; */
+  /*será no mínimo 0.4rem, aumentará com a largura da viewport (3vw + 1rem) e não ultrapassará 1.5rem */
+  font-size: clamp(0.4rem, 3vw, 1.5rem);
+  font-weight: 900;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.principal__cards {
+  /* border: 1px solid gray; */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.principal__card {
+  border: 1px solid rgb(224, 223, 223);
+  border-radius: 10px;
+  /* width: 30.5%; */
+  padding: 15px;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  flex: 1 1 calc(30%);
+  box-sizing: border-box;
+  gap: 10px;
+}
+
+.card__icone {
+  width: 48px;
+  height: 48px;
+}
+
+.card__texto {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  text-align: right;
+  font-size: clamp(0.2rem, 2vw, 1rem);
+}
+
+.principal__rodape {
+  /* border: solid; */
+  background-color: aquamarine;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rodape__dicas {
+  display: flex;
+  align-items: center;
+  /* border: solid; */
+  margin: 15px;
+  gap: 25px;
+}
+
+.rodape__dicas__icone {
+  width: 64px;
+  height: 64px;
+}
+
+.rodape__dicas__texto {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(0.2rem, 2vw, 1rem);
+}
+
+.rodape__botoes {
+  /* border: solid; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px;
+  font-weight: 600;
+}
+
+.rodape__botoes a {
+  background-color: #22d4fd;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: clamp(0.2rem, 2vw, 1rem);
+}
